@@ -1,0 +1,339 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7832590614633262469
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  color:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    m_OverrideState: 0
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.25
+  smoothness:
+    m_OverrideState: 0
+    m_Value: 0.2
+  rounded:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-7755016119477377135
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c981ee17d53ea42b3cb31ca0b891a4, type: 3}
+  m_Name: MKGlow
+  m_EditorClassIdentifier: 
+  active: 1
+  showEditorMainBehavior:
+    m_OverrideState: 0
+    m_Value: 1
+  showEditorBloomBehavior:
+    m_OverrideState: 0
+    m_Value: 1
+  showEditorLensSurfaceBehavior:
+    m_OverrideState: 0
+    m_Value: 0
+  showEditorLensFlareBehavior:
+    m_OverrideState: 0
+    m_Value: 1
+  showEditorGlareBehavior:
+    m_OverrideState: 0
+    m_Value: 1
+  isInitialized:
+    m_OverrideState: 1
+    m_Value: 1
+  allowGeometryShaders:
+    m_OverrideState: 0
+    m_Value: 1
+  allowComputeShaders:
+    m_OverrideState: 0
+    m_Value: 1
+  renderPriority:
+    m_OverrideState: 0
+    m_Value: 1
+  debugView:
+    m_OverrideState: 0
+    m_Value: 0
+  quality:
+    m_OverrideState: 0
+    m_Value: 2
+  antiFlickerMode:
+    m_OverrideState: 0
+    m_Value: 0
+  workflow:
+    m_OverrideState: 0
+    m_Value: 0
+  selectiveRenderLayerMask:
+    m_OverrideState: 0
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+  anamorphicRatio:
+    m_OverrideState: 0
+    m_Value: -0.36
+  lumaScale:
+    m_OverrideState: 0
+    m_Value: 0.493
+  blooming:
+    m_OverrideState: 0
+    m_Value: 0
+  bloomThreshold:
+    m_OverrideState: 1
+    m_Value:
+      minValue: 4.5
+      maxValue: 10
+  bloomScattering:
+    m_OverrideState: 0
+    m_Value: 7
+  bloomIntensity:
+    m_OverrideState: 1
+    m_Value: 0.25
+  allowLensSurface:
+    m_OverrideState: 1
+    m_Value: 0
+  lensSurfaceDirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensSurfaceDirtIntensity:
+    m_OverrideState: 1
+    m_Value: 2.5
+  lensSurfaceDiffractionTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensSurfaceDiffractionIntensity:
+    m_OverrideState: 1
+    m_Value: 2
+  allowLensFlare:
+    m_OverrideState: 1
+    m_Value: 1
+  lensFlareStyle:
+    m_OverrideState: 1
+    m_Value: 5
+  lensFlareGhostFade:
+    m_OverrideState: 0
+    m_Value: 10
+  lensFlareGhostIntensity:
+    m_OverrideState: 1
+    m_Value: 0.5
+  lensFlareThreshold:
+    m_OverrideState: 1
+    m_Value:
+      minValue: 4.5
+      maxValue: 10
+  lensFlareScattering:
+    m_OverrideState: 1
+    m_Value: 4.2
+  lensFlareColorRamp:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  lensFlareChromaticAberration:
+    m_OverrideState: 0
+    m_Value: -100
+  lensFlareGhostCount:
+    m_OverrideState: 0
+    m_Value: 3
+  lensFlareGhostDispersal:
+    m_OverrideState: 0
+    m_Value: 0.6
+  lensFlareHaloFade:
+    m_OverrideState: 0
+    m_Value: 2
+  lensFlareHaloIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+  lensFlareHaloSize:
+    m_OverrideState: 0
+    m_Value: 0.4
+  allowGlare:
+    m_OverrideState: 1
+    m_Value: 1
+  glareBlend:
+    m_OverrideState: 1
+    m_Value: 0.1
+  glareIntensity:
+    m_OverrideState: 1
+    m_Value: 0.25
+  glareAngle:
+    m_OverrideState: 0
+    m_Value: 0
+  glareThreshold:
+    m_OverrideState: 0
+    m_Value:
+      minValue: 1.25
+      maxValue: 10
+  glareStreaks:
+    m_OverrideState: 0
+    m_Value: 4
+  glareScattering:
+    m_OverrideState: 1
+    m_Value: 2
+  glareStyle:
+    m_OverrideState: 1
+    m_Value: 6
+  glareSample0Scattering:
+    m_OverrideState: 0
+    m_Value: 5
+  glareSample0Angle:
+    m_OverrideState: 0
+    m_Value: 0
+  glareSample0Intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  glareSample0Offset:
+    m_OverrideState: 0
+    m_Value: 0
+  glareSample1Scattering:
+    m_OverrideState: 0
+    m_Value: 5
+  glareSample1Angle:
+    m_OverrideState: 0
+    m_Value: 45
+  glareSample1Intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  glareSample1Offset:
+    m_OverrideState: 0
+    m_Value: 0
+  glareSample2Scattering:
+    m_OverrideState: 0
+    m_Value: 5
+  glareSample2Angle:
+    m_OverrideState: 0
+    m_Value: 90
+  glareSample2Intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  glareSample2Offset:
+    m_OverrideState: 0
+    m_Value: 0
+  glareSample3Scattering:
+    m_OverrideState: 0
+    m_Value: 5
+  glareSample3Angle:
+    m_OverrideState: 0
+    m_Value: 135
+  glareSample3Intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  glareSample3Offset:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-5027904801083955175
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
+  m_Name: FilmGrain
+  m_EditorClassIdentifier: 
+  active: 1
+  type:
+    m_OverrideState: 1
+    m_Value: 5
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.25
+  response:
+    m_OverrideState: 0
+    m_Value: 0.8
+  texture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+--- !u!114 &-2361943208696738703
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: -0.14755943}
+  shadowsStart:
+    m_OverrideState: 0
+    m_Value: 0
+  shadowsEnd:
+    m_OverrideState: 0
+    m_Value: 0.3
+  highlightsStart:
+    m_OverrideState: 0
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 0
+    m_Value: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Standard Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -7755016119477377135}
+  - {fileID: 5290036328754882589}
+  - {fileID: -7832590614633262469}
+  - {fileID: -5027904801083955175}
+  - {fileID: -2361943208696738703}
+--- !u!114 &5290036328754882589
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 0
+    m_Value: 0
+  quality:
+    m_OverrideState: 0
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.2
+  clamp:
+    m_OverrideState: 0
+    m_Value: 0.05
