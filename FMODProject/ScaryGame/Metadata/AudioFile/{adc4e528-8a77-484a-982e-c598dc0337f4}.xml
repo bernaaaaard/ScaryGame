@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{adc4e528-8a77-484a-982e-c598dc0337f4}">
+		<property name="assetPath">
+			<value>pink-noise-96k 10s.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>10.000666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a1f4c86-365a-4b0c-9977-8467e8cc153e}</destination>
+		</relationship>
+	</object>
+</objects>
