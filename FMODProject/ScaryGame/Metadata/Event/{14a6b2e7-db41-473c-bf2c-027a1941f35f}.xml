@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{2aca8f94-d6b1-4444-b848-74d0a824ec75}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{d6bbde1b-2257-499e-af16-536ba1f9f651}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{69a59db4-b6b6-47dd-a0cf-d585dce404a9}">
 		<relationship name="masterBus">
@@ -53,7 +56,14 @@
 			<destination>{503b4444-d4fd-42b3-b7e0-d4ba597c518d}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{a0425aae-47a7-49db-9f32-28d3b6e80998}" />
+	<object class="EventAutomatableProperties" id="{a0425aae-47a7-49db-9f32-28d3b6e80998}">
+		<property name="minimumDistance">
+			<value>7.4000001</value>
+		</property>
+		<property name="maximumDistance">
+			<value>90</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{06003749-b139-43e0-9079-a87d3a51cb24}" />
 	<object class="GroupTrack" id="{00d3d9b5-701f-441b-97a7-34d38123423e}">
 		<relationship name="modules">
@@ -177,7 +187,6 @@
 		<property name="name">
 			<value>SourcePos</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>
@@ -186,7 +195,6 @@
 		<property name="name">
 			<value>OverallGain</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-1</value>
 		</property>
@@ -196,7 +204,7 @@
 			<value>ApplyDA</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<property name="minimumValue">
 			<value>0</value>
@@ -210,7 +218,7 @@
 			<value>ApplyAA</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<property name="minimumValue">
 			<value>0</value>
@@ -252,7 +260,7 @@
 			<value>ApplyTrans</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<property name="minimumValue">
 			<value>0</value>
@@ -282,7 +290,7 @@
 			<value>Interpolation</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<property name="minimumValue">
 			<value>0</value>
@@ -307,7 +315,7 @@
 			<value>DAType</value>
 		</property>
 		<property name="value">
-			<value>2</value>
+			<value>3</value>
 		</property>
 		<property name="minimumValue">
 			<value>0</value>
@@ -321,7 +329,7 @@
 			<value>DAMinDist</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,10000.000000)}</value>
@@ -332,7 +340,7 @@
 			<value>DAMaxDist</value>
 		</property>
 		<property name="value">
-			<value>20</value>
+			<value>1050</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,10000.000000)}</value>
@@ -365,7 +373,7 @@
 			<value>AirAbsHigh</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>0.849999964</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,1.000000)}</value>
@@ -376,7 +384,7 @@
 			<value>Directivity</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>0.36499998</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,1.000000)}</value>
@@ -387,7 +395,7 @@
 			<value>DipoleWeight</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>0.734999955</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,1.000000)}</value>
@@ -456,7 +464,7 @@
 			<value>TransHigh</value>
 		</property>
 		<property name="value">
-			<value>1</value>
+			<value>0.109999999</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,1.000000)}</value>
@@ -515,7 +523,6 @@
 		<property name="name">
 			<value>SimOutputs</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>0</value>
 		</property>
@@ -532,7 +539,6 @@
 		<property name="name">
 			<value>DistRange</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-6</value>
 		</property>

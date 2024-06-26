@@ -636,10 +636,14 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     Plugins:
-      Value: []
+      Value:
+      - phonon_fmod
       HasValue: 1
     StaticPlugins:
-      Value: []
+      Value:
+      - FMOD_SteamAudio_Spatialize_GetDSPDescription
+      - FMOD_SteamAudio_MixerReturn_GetDSPDescription
+      - FMOD_SteamAudio_Reverb_GetDSPDescription
       HasValue: 1
     CallbackHandler:
       Value: {fileID: 0}
