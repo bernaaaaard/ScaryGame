@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{7da4ec7b-3cd4-4a09-bc9b-65b2637c5147}">
 		<property name="name">
-			<value>Test_Thin Petal</value>
+			<value>2D_Thin Petal</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{53940605-18e1-433c-a5a6-5114681edc17}">
 		<relationship name="effects">
 			<destination>{8897dd55-0efe-4e20-89d1-57a241c3abb8}</destination>
-			<destination>{980fc1da-b705-4d5f-920f-306af659b645}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1bff166a-5c40-4712-b3a9-fa1b073c490a}">
@@ -129,6 +128,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{2d068d37-bc5e-4e36-9c2d-7281048c3e76}" />
 	<object class="MixerBusFader" id="{8897dd55-0efe-4e20-89d1-57a241c3abb8}" />
-	<object class="SpatialiserEffect" id="{980fc1da-b705-4d5f-920f-306af659b645}" />
 	<object class="MixerBusFader" id="{e92da3c8-071e-45c3-8f84-4978b519f350}" />
 </objects>
