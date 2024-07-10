@@ -12,11 +12,11 @@ public class IntroScript : MonoBehaviour
     GameObject PlayerCharacter2;
     Transform teleportPlace;
     ColliderScript surrealRealm;
-    GameObject TriggerBoi1;
-    GameObject TriggerBoi2;
-    GameObject TriggerBoi3;
-    GameObject TriggerBoi4;
-    GameObject AntiStairsColldier;
+    public GameObject TriggerBoi1;
+    public GameObject TriggerBoi2;
+    public GameObject TriggerBoi3;
+    public GameObject TriggerBoi4;
+    public GameObject AntiStairsColldier;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +28,11 @@ public class IntroScript : MonoBehaviour
     {
         if (startTour == true)
         {
-            AntiStairsColldier.SetActive(true);
 
             switch (sequence)
             {
                 case 0:
+                    AntiStairsColldier.SetActive(true);
                     TriggerBoi1.SetActive(true);
                     TriggerBoi2.SetActive(true);
                 break;
