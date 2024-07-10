@@ -7,6 +7,7 @@ public class InteractionScript : MonoBehaviour
     [SerializeField] private bool triggerActive = false;
     public GameObject EpicUI;
     public IntroScript GameManager;
+    public bool couchSitdown;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -30,11 +31,15 @@ public class InteractionScript : MonoBehaviour
     {
         if (triggerActive && Input.GetKeyDown(KeyCode.E))
         {
-            SomeCoolAction();
+            if (couchSitdown == true)
+            {
+                GameManager.startTour = true;
+            }
+            ManagerSequencer();
         }
     }
 
-    public void SomeCoolAction()
+    public void ManagerSequencer()
     {
         GameManager.sequence = GameManager.sequence + 1;
         Destroy(this.gameObject);

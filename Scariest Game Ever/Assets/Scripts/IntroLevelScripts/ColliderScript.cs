@@ -8,13 +8,17 @@ public class ColliderScript : MonoBehaviour
     public IntroScript GameManager;
     public Transform teleportTarget;
     public bool IsTriggerboi;
-
+    public bool IsSurrealWorldTrigger;
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("IsWorking");
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("PlayerHit at " + PlayerCharacter.transform.position + ". Will teleport to: "+ teleportTarget.transform.position);
+            if (IsSurrealWorldTrigger == true)
+            {
+                teleportTarget = GameManager.teleportLocation;
+            }
             PlayerCharacter.transform.position = teleportTarget.transform.position;
             PlayerCharacter.transform.rotation = teleportTarget.transform.rotation;
             if (IsTriggerboi == true)
