@@ -202,6 +202,9 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        // No control when dialogue is playing
+        if(DialogueManager.Instance.DialogueIsPlaying) return;
+
         #region Camera
 
         // Control camera movement
@@ -366,6 +369,9 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
+        // No control when dialogue is playing
+        if(DialogueManager.Instance.DialogueIsPlaying) return;
+        
         #region Movement
 
         if (playerCanMove)
