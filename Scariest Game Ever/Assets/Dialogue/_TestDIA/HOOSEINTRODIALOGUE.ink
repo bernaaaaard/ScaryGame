@@ -1,5 +1,6 @@
 //The realtor is upstairs. You can hear him shuffling little things around, almost as if he's rearranging little bits of furniture — a lamp, some potted plants. He calls to you from the balcony, unseen.
 "I'll be down in a minute! Just take a seat on the couch and I'll join you shortly."
+Three friends, they come, they play <br>Three days, how long they stay <br>'Til wooden giant, rotten, wakes <br>Three heads from friends, it takes TESTSETETSETEST
 + [Sitting] -> Sitting
 + [Upstairs] -> Upstairs
 === Sitting ===
@@ -10,10 +11,7 @@
 -> HouseTour
 === Upstairs ===
 //Curiosity paws at you, the gentle wonder of what this realtor looks like pushing you up the steps and face-to-face. The wooden boards creak a little under your feet, but as you reach the top, sure that the figure of the man would be standing there, instead you are greeted by empty, thin air. Even the furniture you were so sure of hearing him move around has vanished — there is nothing up here. In fact, all you can hear now is the hollow howling of a breeze blowing by the house, brushing up against the siding. You wander along into the bedroom, trying to spot anything at all, but all that you meet is more empty space. And for a new house it is awfully dusty. The floors look unswept, the corners of the walls are lined with thick cobwebs. An old, yellowed piece of paper lies on the floor. You pick it up, reading the words scribbled there in crayon.
-Three friends, they come, they play
-Three days, how long they stay
-'Til wooden giant, rotten, wakes
-Three heads from friends, it takes
+Three friends, they come, they play <br>Three days, how long they stay <br>'Til wooden giant, rotten, wakes <br>Three heads from friends, it takes
 //You put the paper back, and walk alone through the upper floor back to the stairwell, the eerie quiet following you every step of the way. The stairs moan in much the same way they did as you went up, but with no other noises now to accompany it, the tones of creaking wood are awfully loud, worryingly so. All the same, you’re able to make it back into the living room, and decide that maybe it's a good time to finally sit on the couch like the realtor said.
 -> HouseTour
 === HouseTour ===
