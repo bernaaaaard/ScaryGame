@@ -8,6 +8,10 @@ public class InteractionScript : MonoBehaviour
     public GameObject EpicUI;
     public IntroScript GameManager;
     public bool couchSitdown;
+    
+    public bool introJumpscare;
+    public GameObject player;
+    public GameObject sofaCam;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -29,13 +33,18 @@ public class InteractionScript : MonoBehaviour
 
     private void Update()
     {
-        if (triggerActive && Input.GetKeyDown(KeyCode.E))
+        if ((triggerActive && Input.GetKeyDown(KeyCode.E)) || introJumpscare == true)
         {
             if (couchSitdown == true)
             {
-                GameManager.startTour = true;
+                player.SetActive(false);
+                sofaCam.SetActive(true);
             }
-            ManagerSequencer();
+            if (couchSitdown == false)
+            {
+                ManagerSequencer();
+            }
+            
         }
     }
 
