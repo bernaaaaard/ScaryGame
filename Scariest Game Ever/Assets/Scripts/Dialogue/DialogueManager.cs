@@ -111,7 +111,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EnterDialogueMode(TextAsset inkJSON)
+    public void EnterDialogueMode(TextAsset inkJSON, string knotToStartFrom = null)
     {
         // Setup dialogue
         currentStoryJSON = inkJSON;
@@ -123,6 +123,13 @@ public class DialogueManager : MonoBehaviour
         }
 
         currentStory = new Story(inkJSON.text);
+
+        if (knotToStartFrom != "")
+        {
+            Debug.Log("Starting Dialouge from " + knotToStartFrom + " knot. (If no dialogue happens, check spelling of knot)");
+            currentStory.ChoosePathString(knotToStartFrom);
+        }
+
         DialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
