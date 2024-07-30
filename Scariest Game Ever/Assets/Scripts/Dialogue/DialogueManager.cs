@@ -13,7 +13,10 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Please Set")]
     [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject notePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI noteText;
+
 
     [Header("Debug")]
     [SerializeField] private bool testingMode = true;
@@ -43,24 +46,49 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         // Safefy assignments. I'm gonna assume that these might not be set
-        if (dialoguePanel == null)
+        if (dialoguePanel == null || notePanel == null)
         {
-            dialoguePanel = GameObject.Find("DialoguePanel");
+            // Grab 
+            TextMeshProUGUI[] dialogueTextObj = FindObjectsByType<TextMeshProUGUI>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
-            // Yell at u
+            foreach (TextMeshProUGUI text in dialogueTextObj)
+            {
+                if (text.name == "DialogueText")
+                {
+                    dialogueText = text;
+                    dialoguePanel = text.transform.parent.gameObject;
+                }
+
+                if (text.name == "NoteText")
+                {
+                    noteText = text;
+                    notePanel = text.transform.parent.gameObject;
+                }
+            }
+
+
+            // Yell at u if still null
             if (dialoguePanel == null) 
             {
                 Debug.LogError("Couldn't find the dialogue panel in the scene. Either add the DialogueCanvas prefab or link to it directly in the DialogueManager");
                 return;
             }
 
-            // If the panel isn't set, the text probably isn't either
+            if (notePanel == null) 
+            {
+                Debug.LogError("Couldn't find the note panel in the scene. Either add the DialogueCanvas prefab or link to it directly in the DialogueManager");
+                return;
+            }
+
+            // If the panels aren't set, the text probably isn't either
             dialogueText = dialoguePanel.transform.GetComponentInChildren<TextMeshProUGUI>();
+            noteText = notePanel.transform.GetComponentInChildren<TextMeshProUGUI>();
         }
 
 
         DialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+        notePanel.SetActive(false);
     }
 
     // Update is called once per frame
