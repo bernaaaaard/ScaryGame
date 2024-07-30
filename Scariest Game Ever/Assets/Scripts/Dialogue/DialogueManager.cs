@@ -24,6 +24,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextAsset testingAsset;
 
     private Story currentStory;
+    private GameObject currentPanel;
+    private TextMeshProUGUI currentText;
     private List<string> currentLineTags;
     public bool DialogueIsPlaying {get; private set; }
 
@@ -111,7 +113,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EnterDialogueMode(TextAsset inkJSON, string knotToStartFrom = null)
+    public void EnterDialogueMode(TextAsset inkJSON, string knotToStartFrom = "", bool isNote = false)
     {
         // Setup dialogue
         currentStoryJSON = inkJSON;
@@ -124,6 +126,20 @@ public class DialogueManager : MonoBehaviour
 
         currentStory = new Story(inkJSON.text);
 
+        // Get right panel / text
+        if (isNote)
+        {
+            currentPanel = notePanel;
+            currentText = noteText;
+
+        }
+        else
+        {
+            currentPanel = dialoguePanel;
+            currentText = dialogueText;
+        }
+
+        // Knot start
         if (knotToStartFrom != "")
         {
             Debug.Log("Starting Dialouge from " + knotToStartFrom + " knot. (If no dialogue happens, check spelling of knot)");
@@ -131,7 +147,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         DialogueIsPlaying = true;
-        dialoguePanel.SetActive(true);
+        currentPanel.SetActive(true);
 
         ContinueStory();
     }
@@ -141,7 +157,7 @@ public class DialogueManager : MonoBehaviour
         // Run next line
         if (currentStory.canContinue)
         {
-            dialogueText.text = currentStory.Continue();
+            currentText.text = currentStory.Continue();
 
             // Check tags
             if (currentStory.currentTags.Count > 0)
@@ -167,7 +183,7 @@ public class DialogueManager : MonoBehaviour
     private void ExitDialogueMode()
     {
         DialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
-        dialogueText.text = "";
+        currentPanel.SetActive(false);
+        currentText.text = "";
     }
 }

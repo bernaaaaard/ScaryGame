@@ -26,7 +26,7 @@ public class DialogueColliderTrigger : DialogueTrigger
             }
 
             // Start dialogue
-            DialogueManager.Instance.EnterDialogueMode(inkStoryToPlay, knotToStartFrom);
+            DialogueManager.Instance.EnterDialogueMode(inkStoryToPlay, knotToStartFrom, isNote);
             hasBeenTriggered = true;
         }
     }

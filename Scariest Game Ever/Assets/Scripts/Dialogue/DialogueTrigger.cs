@@ -11,6 +11,7 @@ public abstract class DialogueTrigger : MonoBehaviour
     [SerializeField] protected string knotToStartFrom;
     [Tooltip("Will the ink story only be allowed to be triggered once? When false, it can be triggered as many times as the story allows")]
     [SerializeField] protected bool isOneShot = false;
+    [SerializeField] protected bool isNote = false;
 
     [Header("Debug")]
     [SerializeField] protected bool hasBeenTriggered = false;
