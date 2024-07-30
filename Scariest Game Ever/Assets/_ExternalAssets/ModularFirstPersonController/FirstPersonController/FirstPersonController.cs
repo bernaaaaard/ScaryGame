@@ -203,7 +203,7 @@ public class FirstPersonController : MonoBehaviour
     private void Update()
     {
         // No control when dialogue is playing
-        if(DialogueManager.Instance.DialogueIsPlaying) return;
+        if (DialoguePlaying()) return;
 
         #region Camera
 
@@ -370,7 +370,7 @@ public class FirstPersonController : MonoBehaviour
     void FixedUpdate()
     {
         // No control when dialogue is playing
-        if(DialogueManager.Instance.DialogueIsPlaying) return;
+        if (DialoguePlaying()) return;
         
         #region Movement
 
@@ -530,6 +530,20 @@ public class FirstPersonController : MonoBehaviour
             // Resets when play stops moving
             timer = 0;
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
+        }
+    }
+
+    private bool DialoguePlaying()
+    {
+        try
+        {
+            return DialogueManager.Instance.DialogueIsPlaying;
+        }
+        
+        catch (System.Exception)
+        {
+            Debug.LogError("There's no DialogueManager here. You broke the player :(");
+            return false;
         }
     }
 }
