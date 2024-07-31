@@ -131,6 +131,13 @@ public class FirstPersonController : MonoBehaviour
 
     #endregion
 
+    #region Interaction
+
+    public bool enableInteraction = true;
+    public KeyCode interactionKey = KeyCode.E;
+
+    #endregion
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -539,7 +546,7 @@ public class FirstPersonController : MonoBehaviour
         {
             return DialogueManager.Instance.DialogueIsPlaying;
         }
-        
+
         catch (System.Exception)
         {
             Debug.LogError("There's no DialogueManager here. You broke the player :(");
@@ -744,6 +751,22 @@ public class FirstPersonController : MonoBehaviour
         fpc.joint = (Transform)EditorGUILayout.ObjectField(new GUIContent("Camera Joint", "Joint object position is moved while head bob is active."), fpc.joint, typeof(Transform), true);
         fpc.bobSpeed = EditorGUILayout.Slider(new GUIContent("Speed", "Determines how often a bob rotation is completed."), fpc.bobSpeed, 1, 20);
         fpc.bobAmount = EditorGUILayout.Vector3Field(new GUIContent("Bob Amount", "Determines the amount the joint moves in both directions on every axes."), fpc.bobAmount);
+        GUI.enabled = true;
+
+        #endregion
+
+        #region Interaction
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        GUILayout.Label("Interaction Setup", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
+        EditorGUILayout.Space();
+
+        fpc.enableHeadBob = EditorGUILayout.ToggleLeft(new GUIContent("Enable Interaction", "Determines if player can use a button to interact with something."), fpc.enableInteraction);
+        
+
+        GUI.enabled = fpc.enableInteraction;
+        fpc.interactionKey = (KeyCode)EditorGUILayout.EnumPopup(new GUIContent("Interaction Key", "Determines what key is used to interact."), fpc.interactionKey);
         GUI.enabled = true;
 
         #endregion
