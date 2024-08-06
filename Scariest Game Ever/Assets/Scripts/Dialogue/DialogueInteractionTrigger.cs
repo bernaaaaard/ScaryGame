@@ -12,8 +12,8 @@ public class DialogueInteractionTrigger : DialogueTrigger
     {
         base.Start();
         hasBeenTriggered = false;
-        isNote = true;
-        isOneShot = false;
+        //isNote = true;
+        //isOneShot = false;
 
         if (firstPersonController == null)
         {

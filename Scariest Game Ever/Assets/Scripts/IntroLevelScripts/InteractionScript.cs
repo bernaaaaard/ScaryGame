@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class InteractionScript : MonoBehaviour
 {
-    [SerializeField] private bool triggerActive = false;
+    [SerializeField] private bool triggerActive;
     public GameObject EpicUI;
     public IntroScript GameManager;
     public bool couchSitdown;
+    public bool failsafe;
     
     public bool introJumpscare;
     public GameObject player;
@@ -33,12 +34,15 @@ public class InteractionScript : MonoBehaviour
 
     private void Update()
     {
-        if ((triggerActive && Input.GetKeyDown(KeyCode.E)) || introJumpscare == true)
+        if ((triggerActive && Input.GetKeyDown(KeyCode.E)) && failsafe == false || introJumpscare == true)
         {
             if (couchSitdown == true)
             {
+                failsafe = true;
                 player.SetActive(false);
                 sofaCam.SetActive(true);
+                
+                StartCoroutine(Failsafe());
             }
             if (couchSitdown == false)
             {
@@ -46,8 +50,19 @@ public class InteractionScript : MonoBehaviour
             }
             
         }
-    }
 
+        if (triggerActive && Input.GetKeyDown(KeyCode.E) && sofaCam.gameObject.activeSelf == true && failsafe == false)
+        {
+            failsafe = true;
+            player.SetActive(true);
+            sofaCam.SetActive(false);
+        }
+    }
+    IEnumerator Failsafe()
+    {
+        yield return new WaitForSeconds(.05f);
+        failsafe = false;
+    }
     public void ManagerSequencer()
     {
         GameManager.sequence = GameManager.sequence + 1;
