@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{6960649b-18a3-4ae6-8ad6-d0c44a344c4c}">
+		<property name="assetPath">
+			<value>DialogueBits/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a1f4c86-365a-4b0c-9977-8467e8cc153e}</destination>
+		</relationship>
+	</object>
+</objects>

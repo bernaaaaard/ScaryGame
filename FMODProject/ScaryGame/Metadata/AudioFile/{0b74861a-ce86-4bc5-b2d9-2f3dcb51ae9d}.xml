@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0b74861a-ce86-4bc5-b2d9-2f3dcb51ae9d}">
+		<property name="assetPath">
+			<value>DialogueBits/DialogueBit3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a1f4c86-365a-4b0c-9977-8467e8cc153e}</destination>
+		</relationship>
+	</object>
+</objects>
