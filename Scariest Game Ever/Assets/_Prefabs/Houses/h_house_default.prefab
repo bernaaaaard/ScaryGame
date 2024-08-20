@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 4685634274618768001}
   - component: {fileID: 1362141469792866710}
   - component: {fileID: 6637032440547073831}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +601,9 @@ GameObject:
   - component: {fileID: 8289102936648820261}
   - component: {fileID: 1183258907114490310}
   - component: {fileID: 5054245914786162574}
-  m_Layer: 0
+  - component: {fileID: 2688820479547109441}
+  - component: {fileID: 9108884716597968802}
+  m_Layer: 6
   m_Name: upper_cabinetdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,6 +675,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2688820479547109441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779940417894104219}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0010004499, y: 0.011931278, z: 0.015587092}
+  m_Center: {x: -0.0005002291, y: 0.006013032, z: 0.0077935285}
+--- !u!114 &9108884716597968802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779940417894104219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &793473670145632683
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +834,8 @@ GameObject:
   - component: {fileID: 3935400839422528063}
   - component: {fileID: 5768853881044032386}
   - component: {fileID: 1789043707951651025}
-  m_Layer: 0
+  - component: {fileID: 8554462677800936354}
+  m_Layer: 6
   m_Name: cabinetdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,6 +928,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.012263284, y: 0.0010004495, z: 0.013643764}
   m_Center: {x: -0.0061790445, y: -0.00050025934, z: 0.0068218717}
+--- !u!114 &8554462677800936354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834574944712546944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &873474371217705443
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +960,7 @@ GameObject:
   - component: {fileID: 4070342858421537918}
   - component: {fileID: 7903602202640926267}
   - component: {fileID: 6399891521875917942}
+  - component: {fileID: 2429269524618284031}
   m_Layer: 0
   m_Name: ub_cabinetdoor.001
   m_TagString: Untagged
@@ -989,6 +1054,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011067855, y: 0.0010004502, z: 0.013141158}
   m_Center: {x: -0.0055475035, y: 0.00050022325, z: 0.006570577}
+--- !u!114 &2429269524618284031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873474371217705443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -85.378}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &953172551862442655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1192,8 @@ GameObject:
   - component: {fileID: 4902870923953976915}
   - component: {fileID: 1854772327615954565}
   - component: {fileID: 5269608499553612507}
-  m_Layer: 0
+  - component: {fileID: 1874690450344049562}
+  m_Layer: 6
   m_Name: pantry_door_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,6 +1286,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01102306, y: 0.0010972158, z: 0.046541374}
   m_Center: {x: -0.0055115367, y: -0.0005486377, z: 0.02327068}
+--- !u!114 &1874690450344049562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961070708944795866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 119.589}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &1031644533862143405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1317,7 @@ GameObject:
   - component: {fileID: 7277871936651968628}
   - component: {fileID: 8584781828409677858}
   - component: {fileID: 6412362594866482629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upper_cabinetdoor.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1295,7 +1401,8 @@ GameObject:
   - component: {fileID: 4276700323689014796}
   - component: {fileID: 8318923789850723484}
   - component: {fileID: 835026899032581042}
-  m_Layer: 0
+  - component: {fileID: 1100939478662556895}
+  m_Layer: 6
   m_Name: cabinetdoor.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,6 +1495,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.007598359, y: 0.0010004495, z: 0.013643764}
   m_Center: {x: 0.0038465755, y: -0.00050025934, z: 0.0068218717}
+--- !u!114 &1100939478662556895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032542880870449989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -98.685}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &1101853577870630425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,7 +1527,8 @@ GameObject:
   - component: {fileID: 6161539729737366274}
   - component: {fileID: 7274938437979082961}
   - component: {fileID: 5345536886594412693}
-  m_Layer: 0
+  - component: {fileID: 5551930110639413835}
+  m_Layer: 6
   m_Name: fridge_door_upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1493,6 +1621,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020952616, y: 0.0041299295, z: 0.012920604}
   m_Center: {x: -0.0104037905, y: -0.000043622327, z: 0.00638779}
+--- !u!114 &5551930110639413835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101853577870630425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 123.04}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &1116452929146840755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,7 +1947,8 @@ GameObject:
   - component: {fileID: 3431104759876948078}
   - component: {fileID: 6948729750427124923}
   - component: {fileID: 2082630731739468559}
-  m_Layer: 0
+  - component: {fileID: 6471153221932665222}
+  m_Layer: 6
   m_Name: door_indoors (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,13 +1963,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426190949849654569}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.1168623, y: 11.570985, z: -11.921331}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3731513422360431086}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &3431104759876948078
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1892,6 +2041,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156391, z: 0.045959502}
   m_Center: {x: 0.00063344714, y: -0.011578188, z: 0.022979751}
+--- !u!114 &6471153221932665222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426190949849654569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -90, y: 0, z: -92.623}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &1459275931403939452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,8 +2087,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.9567213, y: 0.41264153, z: 8.116285}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3731513422360431086}
   - {fileID: 2735508321819173572}
@@ -2133,7 +2302,8 @@ GameObject:
   - component: {fileID: 3162253530412311596}
   - component: {fileID: 9112550264687133221}
   - component: {fileID: 5470462148813660930}
-  m_Layer: 0
+  - component: {fileID: 7218028689994698125}
+  m_Layer: 6
   m_Name: cabinetdoor.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2226,6 +2396,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011370021, y: 0.0010004495, z: 0.013643764}
   m_Center: {x: 0.0057324045, y: -0.00050025934, z: 0.0068218717}
+--- !u!114 &7218028689994698125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565217412984241834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -98.685}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &1586766658172603181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,7 +2723,7 @@ GameObject:
   - component: {fileID: 5881060747154083427}
   - component: {fileID: 1211845987098727858}
   - component: {fileID: 1436015876553112348}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_basement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2639,7 +2829,7 @@ GameObject:
   - component: {fileID: 2163458983147871397}
   - component: {fileID: 5083807501180325414}
   - component: {fileID: 1858600616290838977}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: island_counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2744,7 +2934,7 @@ GameObject:
   - component: {fileID: 6391478746061774379}
   - component: {fileID: 9137214774502443095}
   - component: {fileID: 7392755429296379098}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_firstbathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3144,7 +3334,7 @@ GameObject:
   - component: {fileID: 2287452785894762215}
   - component: {fileID: 7294480614923406874}
   - component: {fileID: 6592809364407698361}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upper_cabinetdoor.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3228,7 +3418,8 @@ GameObject:
   - component: {fileID: 7706165641831059018}
   - component: {fileID: 4099376293045989998}
   - component: {fileID: 565806025911083130}
-  m_Layer: 0
+  - component: {fileID: 4942422127608660272}
+  m_Layer: 6
   m_Name: cabinetdoor.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3321,6 +3512,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011370045, y: 0.0010004495, z: 0.013643764}
   m_Center: {x: -0.0057324176, y: -0.00050025934, z: 0.0068218717}
+--- !u!114 &4942422127608660272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633726303618838598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &2786127627508207228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,7 +3543,9 @@ GameObject:
   - component: {fileID: 5688484355729910026}
   - component: {fileID: 142161624011589075}
   - component: {fileID: 3001451550725901775}
-  m_Layer: 0
+  - component: {fileID: 4594446330331705269}
+  - component: {fileID: 5431644759376538689}
+  m_Layer: 6
   m_Name: upper_cabinetdoor.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3404,6 +3617,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4594446330331705269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2786127627508207228}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011931271, y: 0.0010004495, z: 0.015587092}
+  m_Center: {x: 0.0060130083, y: -0.00050022954, z: 0.0077935434}
+--- !u!114 &5431644759376538689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2786127627508207228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -98.685}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &2861942651111467777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,6 +3670,7 @@ GameObject:
   - component: {fileID: 8760496555406013667}
   - component: {fileID: 7331378575511286216}
   - component: {fileID: 9114627600276270978}
+  - component: {fileID: 6555486761526564159}
   m_Layer: 0
   m_Name: lb_cabinetdoor.002
   m_TagString: Untagged
@@ -3509,6 +3764,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011067855, y: 0.0010004509, z: 0.013141158}
   m_Center: {x: -0.005547508, y: -0.00050020765, z: 0.006570577}
+--- !u!114 &6555486761526564159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2861942651111467777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 101.668}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &2971093067147857495
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,7 +3796,8 @@ GameObject:
   - component: {fileID: 6948222088121510529}
   - component: {fileID: 677402207098134941}
   - component: {fileID: 7825613857283575847}
-  m_Layer: 0
+  - component: {fileID: 4546067161405202704}
+  m_Layer: 6
   m_Name: cabinetdoor.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3614,6 +3890,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011370045, y: 0.0010004501, z: 0.013643764}
   m_Center: {x: -0.0057324176, y: 0.0005002112, z: 0.006821879}
+--- !u!114 &4546067161405202704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971093067147857495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -98.685}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &2982565565172840242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3822,7 +4118,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5530447451294442046, guid: d901f7122f13a1148b2d6c444caf3799, type: 3}
 --- !u!1 &3203338273744857747
@@ -3920,7 +4216,7 @@ GameObject:
   - component: {fileID: 7648526208487474371}
   - component: {fileID: 1305686069471521513}
   - component: {fileID: 3877924319601652410}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_secondbathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4131,7 +4427,9 @@ GameObject:
   - component: {fileID: 3777975261032612197}
   - component: {fileID: 8055898760855940462}
   - component: {fileID: 8609438516496949780}
-  m_Layer: 0
+  - component: {fileID: 3962089263176710453}
+  - component: {fileID: 7241894513597966111}
+  m_Layer: 6
   m_Name: upper_cabinetdoor.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4203,6 +4501,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3962089263176710453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3364087830769163988}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008613214, y: 0.008613213, z: 0.015587092}
+  m_Center: {x: -0.004306577, y: 0.00416359, z: 0.0077935434}
+--- !u!114 &7241894513597966111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3364087830769163988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &3380873599911132405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4514,7 +4853,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 540622752833226326, guid: d901f7122f13a1148b2d6c444caf3799, type: 3}
+  - {fileID: 2100000, guid: bae7982d27702a344a62281b79e9de1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4971,7 +5310,8 @@ GameObject:
   - component: {fileID: 7204821241964575583}
   - component: {fileID: 8099678689490744443}
   - component: {fileID: 3407635755980597855}
-  m_Layer: 0
+  - component: {fileID: 4115240451613162480}
+  m_Layer: 6
   m_Name: cabinetdoor.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5064,6 +5404,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011370045, y: 0.0010004501, z: 0.013643764}
   m_Center: {x: 0.005732414, y: 0.0005002112, z: 0.006821879}
+--- !u!114 &4115240451613162480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729788728262042588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &3730795513537532907
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,7 +5436,8 @@ GameObject:
   - component: {fileID: 7836858548640109292}
   - component: {fileID: 8552961804308722770}
   - component: {fileID: 8618377663009044223}
-  m_Layer: 0
+  - component: {fileID: 7213919969390277723}
+  m_Layer: 6
   m_Name: pantry_door_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5169,6 +5530,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011023061, y: 0.0010972158, z: 0.046541374}
   m_Center: {x: 0.005511524, y: -0.0005486377, z: 0.02327068}
+--- !u!114 &7213919969390277723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3730795513537532907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -133.172}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &3853365153192044761
 GameObject:
   m_ObjectHideFlags: 0
@@ -5453,7 +5834,7 @@ GameObject:
   - component: {fileID: 5288524365060291147}
   - component: {fileID: 8964439071274940731}
   - component: {fileID: 1736033078865815880}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_secondhallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5770,7 +6151,9 @@ GameObject:
   - component: {fileID: 8689602044192505773}
   - component: {fileID: 8849881399911061754}
   - component: {fileID: 6882422982958804023}
-  m_Layer: 0
+  - component: {fileID: 5021486378913923398}
+  - component: {fileID: 8080384686878937966}
+  m_Layer: 6
   m_Name: upper_cabinetdoor.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5842,6 +6225,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5021486378913923398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204528600952696633}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.007112335, y: 0.0010004495, z: 0.015587092}
+  m_Center: {x: -0.00360357, y: -0.00050022954, z: 0.0077935434}
+--- !u!114 &8080384686878937966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204528600952696633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &4261798706919832836
 GameObject:
   m_ObjectHideFlags: 0
@@ -5854,7 +6278,8 @@ GameObject:
   - component: {fileID: 3379469976246896140}
   - component: {fileID: 8936778938355286707}
   - component: {fileID: 8428130063187245079}
-  m_Layer: 0
+  - component: {fileID: 52167373448757047}
+  m_Layer: 6
   m_Name: cabinetdoor.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5947,6 +6372,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.008847976, y: 0.008847973, z: 0.013643764}
   m_Center: {x: -0.0044239974, y: 0.004280972, z: 0.006821879}
+--- !u!114 &52167373448757047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4261798706919832836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &4309779077848251756
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,7 +6404,8 @@ GameObject:
   - component: {fileID: 6637216477902213770}
   - component: {fileID: 5300936922006261938}
   - component: {fileID: 4127396185552854550}
-  m_Layer: 0
+  - component: {fileID: 1630657565052407861}
+  m_Layer: 6
   m_Name: cabinetdoor.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6052,6 +6498,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0010004499, y: 0.012263282, z: 0.013643764}
   m_Center: {x: -0.0005002366, y: 0.006179051, z: 0.0068218717}
+--- !u!114 &1630657565052407861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309779077848251756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &4404816417836823202
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,7 +6530,7 @@ GameObject:
   - component: {fileID: 8132410340526498117}
   - component: {fileID: 7459134978635840325}
   - component: {fileID: 4326466259389312366}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_livingroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6275,7 +6741,7 @@ GameObject:
   - component: {fileID: 3339650079748704881}
   - component: {fileID: 5478283966592767031}
   - component: {fileID: 7447449030941748407}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upper_cabinetdoor.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6465,6 +6931,7 @@ GameObject:
   - component: {fileID: 9126344779149268995}
   - component: {fileID: 8757938013112925996}
   - component: {fileID: 7515977917566090706}
+  - component: {fileID: 606585906560430767}
   m_Layer: 0
   m_Name: lb_cabinetdoor.003
   m_TagString: Untagged
@@ -6558,6 +7025,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011067855, y: 0.0010004495, z: 0.013141158}
   m_Center: {x: 0.0055475035, y: -0.00050021417, z: 0.006570577}
+--- !u!114 &606585906560430767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4726049784598800630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -89.117}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &4895794027146964397
 GameObject:
   m_ObjectHideFlags: 0
@@ -6570,7 +7057,8 @@ GameObject:
   - component: {fileID: 4238304072243873387}
   - component: {fileID: 6065221867258030295}
   - component: {fileID: 8097501019384535423}
-  m_Layer: 0
+  - component: {fileID: 4801693340101671444}
+  m_Layer: 6
   m_Name: door_indoors (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6663,6 +7151,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156397, z: 0.045959514}
   m_Center: {x: 0.0006334397, y: -0.011578191, z: 0.022979757}
+--- !u!114 &4801693340101671444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4895794027146964397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 83.721}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &4925677638777193365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6781,7 +7289,7 @@ GameObject:
   - component: {fileID: 7739781891290130452}
   - component: {fileID: 2124113489155985600}
   - component: {fileID: 9033504405989800466}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_garage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6886,7 +7394,9 @@ GameObject:
   - component: {fileID: 5426734505851790456}
   - component: {fileID: 496874494637506872}
   - component: {fileID: 5816902767987794228}
-  m_Layer: 0
+  - component: {fileID: 624164671120632455}
+  - component: {fileID: 8654806022801289147}
+  m_Layer: 6
   m_Name: upper_cabinetdoor.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6958,6 +7468,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &624164671120632455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077223536232322778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011931271, y: 0.0010004495, z: 0.015587092}
+  m_Center: {x: -0.0060130083, y: -0.00050022954, z: 0.0077935434}
+--- !u!114 &8654806022801289147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077223536232322778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &5102999397863390329
 GameObject:
   m_ObjectHideFlags: 0
@@ -7241,7 +7792,9 @@ GameObject:
   - component: {fileID: 6702664255144053145}
   - component: {fileID: 5952449162052405259}
   - component: {fileID: 5757028559202736028}
-  m_Layer: 0
+  - component: {fileID: 3017598711844201999}
+  - component: {fileID: 7703492864681970786}
+  m_Layer: 6
   m_Name: upper_cabinetdoor.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7313,6 +7866,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3017598711844201999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211868271200667681}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0010004499, y: 0.011931278, z: 0.015587092}
+  m_Center: {x: -0.0005002291, y: 0.006013032, z: 0.0077935434}
+--- !u!114 &7703492864681970786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211868271200667681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &5265706059941137796
 GameObject:
   m_ObjectHideFlags: 0
@@ -7431,7 +8025,8 @@ GameObject:
   - component: {fileID: 7221557479823100488}
   - component: {fileID: 9095544428807782127}
   - component: {fileID: 1783938997166535626}
-  m_Layer: 0
+  - component: {fileID: 8376376840829825685}
+  m_Layer: 6
   m_Name: door_indoors (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7524,6 +8119,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156397, z: 0.045959514}
   m_Center: {x: 0.0006334397, y: -0.011578191, z: 0.022979757}
+--- !u!114 &8376376840829825685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368021331879201919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 97.259}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &5433135840986857420
 GameObject:
   m_ObjectHideFlags: 0
@@ -8080,7 +8695,7 @@ GameObject:
   - component: {fileID: 4194196208960130813}
   - component: {fileID: 8309816904195153171}
   - component: {fileID: 8036543091525852791}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8528,7 +9143,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1841983400458998513, guid: d901f7122f13a1148b2d6c444caf3799, type: 3}
 --- !u!1 &6118975928470028192
@@ -8543,7 +9158,7 @@ GameObject:
   - component: {fileID: 8635810666221851503}
   - component: {fileID: 3186604085718924864}
   - component: {fileID: 7673612192798651946}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: island
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8649,7 +9264,8 @@ GameObject:
   - component: {fileID: 7066982158302394097}
   - component: {fileID: 4740445618813544823}
   - component: {fileID: 6314556556045680384}
-  m_Layer: 0
+  - component: {fileID: 8669249514413057221}
+  m_Layer: 6
   m_Name: door_indoors (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8664,13 +9280,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6168764251162512499}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
+  m_LocalRotation: {x: -0.4998778, y: 0.4998778, z: 0.50012213, w: 0.50012213}
   m_LocalPosition: {x: 5.9756193, y: 11.570986, z: -6.8607254}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3731513422360431086}
-  m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.972, y: 0, z: 90}
 --- !u!33 &7066982158302394097
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8742,6 +9358,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156395, z: 0.045959506}
   m_Center: {x: 0.00063344714, y: -0.011578194, z: 0.022979753}
+--- !u!114 &8669249514413057221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6168764251162512499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.972, y: 0, z: -44.95}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &6185824508272247673
 GameObject:
   m_ObjectHideFlags: 0
@@ -9049,7 +9685,8 @@ GameObject:
   - component: {fileID: 498377592817832246}
   - component: {fileID: 7789480255376639169}
   - component: {fileID: 4909536561594967726}
-  m_Layer: 0
+  - component: {fileID: 4820755802675637972}
+  m_Layer: 6
   m_Name: fridge_door_lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9142,6 +9779,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020952616, y: 0.0041299295, z: 0.024250865}
   m_Center: {x: -0.0104037905, y: -0.00004365213, z: 0.012052903}
+--- !u!114 &4820755802675637972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542491148164937290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 123.04}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &6692255639626567537
 GameObject:
   m_ObjectHideFlags: 0
@@ -9154,7 +9811,8 @@ GameObject:
   - component: {fileID: 1860046581666681486}
   - component: {fileID: 2507375715249078730}
   - component: {fileID: 3576023396022852237}
-  m_Layer: 0
+  - component: {fileID: 490103587114866677}
+  m_Layer: 6
   m_Name: stove_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9169,13 +9827,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6692255639626567537}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 15.880412, y: 11.899702, z: -24.220528}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 70879367562203240}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &1860046581666681486
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9247,6 +9905,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0008128213, y: 0.019999998, z: 0.015889179}
   m_Center: {x: -0.0004064095, y: 0.000042815685, z: 0.007944593}
+--- !u!114 &490103587114866677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692255639626567537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: 9.525, y: -90, z: 90}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 4
 --- !u!1 &6722759385868348550
 GameObject:
   m_ObjectHideFlags: 0
@@ -9259,6 +9937,7 @@ GameObject:
   - component: {fileID: 6001893621263793025}
   - component: {fileID: 5747837977642262809}
   - component: {fileID: 8650910768311994737}
+  - component: {fileID: 2796917586049164628}
   m_Layer: 0
   m_Name: ub_cabinetdoor
   m_TagString: Untagged
@@ -9352,6 +10031,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011067855, y: 0.0010004502, z: 0.013141158}
   m_Center: {x: 0.0055475063, y: 0.00050022325, z: 0.006570577}
+--- !u!114 &2796917586049164628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722759385868348550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.166}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &6734485276225706519
 GameObject:
   m_ObjectHideFlags: 0
@@ -9364,7 +10063,8 @@ GameObject:
   - component: {fileID: 4600162021844313011}
   - component: {fileID: 2948122528451873050}
   - component: {fileID: 6418787110917383220}
-  m_Layer: 0
+  - component: {fileID: 1390559203768912984}
+  m_Layer: 6
   m_Name: cabinetdoor.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9457,6 +10157,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011370045, y: 0.0010004501, z: 0.013643764}
   m_Center: {x: 0.0057324176, y: 0.0005002112, z: 0.006821879}
+--- !u!114 &1390559203768912984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734485276225706519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &6822154013831798811
 GameObject:
   m_ObjectHideFlags: 0
@@ -9575,7 +10295,8 @@ GameObject:
   - component: {fileID: 4446901582326337863}
   - component: {fileID: 5360826795468471882}
   - component: {fileID: 5188132576166930310}
-  m_Layer: 0
+  - component: {fileID: 5155271378448609935}
+  m_Layer: 6
   m_Name: door_indoors (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9590,13 +10311,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6873970330407116434}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7072302, z: 0.7069834, w: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 15.324878, y: 11.570986, z: -7.820503}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3731513422360431086}
-  m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
 --- !u!33 &4446901582326337863
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9668,6 +10389,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.004436396, y: 0.023156404, z: 0.045959517}
   m_Center: {x: 0.00063344743, y: -0.011578201, z: 0.022979759}
+--- !u!114 &5155271378448609935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6873970330407116434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -90, y: 180, z: 96.289}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &6885952604390141382
 GameObject:
   m_ObjectHideFlags: 0
@@ -9763,7 +10504,8 @@ GameObject:
   - component: {fileID: 7505020375156620088}
   - component: {fileID: 871893513440806717}
   - component: {fileID: 4607164528413625796}
-  m_Layer: 0
+  - component: {fileID: 238884749935482447}
+  m_Layer: 6
   m_Name: door_indoors (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9856,6 +10598,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156395, z: 0.045959506}
   m_Center: {x: 0.0006334546, y: -0.011578198, z: 0.022979753}
+--- !u!114 &238884749935482447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6890021477337584435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 180, z: -3.082001}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &6939614772129706529
 GameObject:
   m_ObjectHideFlags: 0
@@ -10140,7 +10902,8 @@ GameObject:
   - component: {fileID: 3934967573245325612}
   - component: {fileID: 1720662944115097974}
   - component: {fileID: 2475311336763877757}
-  m_Layer: 0
+  - component: {fileID: 8839172960239098397}
+  m_Layer: 6
   m_Name: cabinetdoor.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10233,6 +10996,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011370045, y: 0.0010004501, z: 0.013643764}
   m_Center: {x: -0.0057324213, y: 0.0005002112, z: 0.006821879}
+--- !u!114 &8839172960239098397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329378432960708847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -98.685}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &7431664074775206874
 GameObject:
   m_ObjectHideFlags: 0
@@ -10517,7 +11300,7 @@ GameObject:
   - component: {fileID: 6520986701464742575}
   - component: {fileID: 7264848909555843945}
   - component: {fileID: 810609792267850197}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: walls_firsthallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10622,7 +11405,7 @@ GameObject:
   - component: {fileID: 8594840644842584425}
   - component: {fileID: 4454422866996264113}
   - component: {fileID: 8442022631192796199}
-  - component: {fileID: 4694771340308874441}
+  - component: {fileID: 5513901416059063617}
   m_Layer: 0
   m_Name: shower_tub
   m_TagString: Untagged
@@ -10695,8 +11478,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4694771340308874441
-MeshCollider:
+--- !u!65 &5513901416059063617
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10713,10 +11496,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5693028720820520994, guid: d901f7122f13a1148b2d6c444caf3799, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.022704698, y: 0.049441114, z: 0.03954128}
+  m_Center: {x: 0.0020192796, y: -0.007928144, z: 0.019903507}
 --- !u!1 &8050479217203526381
 GameObject:
   m_ObjectHideFlags: 0
@@ -10834,7 +11616,9 @@ GameObject:
   - component: {fileID: 371690290338400087}
   - component: {fileID: 3118969677826459958}
   - component: {fileID: 7022498461131563490}
-  m_Layer: 0
+  - component: {fileID: 4448506081765182224}
+  - component: {fileID: 8712243337387203396}
+  m_Layer: 6
   m_Name: upper_cabinetdoor.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10906,6 +11690,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4448506081765182224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167846186573446692}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0010004501, y: 0.011931278, z: 0.015587092}
+  m_Center: {x: -0.0005002298, y: -0.0060129724, z: 0.0077935434}
+--- !u!114 &8712243337387203396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167846186573446692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -98.685}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &8214435559672234725
 GameObject:
   m_ObjectHideFlags: 0
@@ -10917,7 +11742,7 @@ GameObject:
   - component: {fileID: 3866168193207373946}
   - component: {fileID: 7761046159416147749}
   - component: {fileID: 4024696304153512118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upper_cabinetdoor.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11001,7 +11826,8 @@ GameObject:
   - component: {fileID: 186903737079130163}
   - component: {fileID: 8135011206887881287}
   - component: {fileID: 3214052610599085186}
-  m_Layer: 0
+  - component: {fileID: 4117905517673549409}
+  m_Layer: 6
   m_Name: door_indoors (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11094,6 +11920,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156397, z: 0.045959514}
   m_Center: {x: 0.0006334481, y: -0.011578191, z: 0.022979757}
+--- !u!114 &4117905517673549409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8310745938148461912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -114.162}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &8311304764381554411
 GameObject:
   m_ObjectHideFlags: 0
@@ -11106,7 +11952,8 @@ GameObject:
   - component: {fileID: 9195245364683079126}
   - component: {fileID: 4504979408335378203}
   - component: {fileID: 6148265825120801536}
-  m_Layer: 0
+  - component: {fileID: 4864746825758850703}
+  m_Layer: 6
   m_Name: door_indoors (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11199,6 +12046,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156397, z: 0.045959514}
   m_Center: {x: 0.0006334397, y: -0.011578191, z: 0.022979757}
+--- !u!114 &4864746825758850703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8311304764381554411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 89.433}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &8312465415364821500
 GameObject:
   m_ObjectHideFlags: 0
@@ -11317,7 +12184,8 @@ GameObject:
   - component: {fileID: 1435818956770004267}
   - component: {fileID: 7686098694945541714}
   - component: {fileID: 3434506702501622893}
-  m_Layer: 0
+  - component: {fileID: 41660503746817778}
+  m_Layer: 6
   m_Name: door_indoors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11332,13 +12200,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8320335938309040173}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7072302, z: 0.7069834, w: 0}
+  m_LocalRotation: {x: 0, y: 0.7069341, z: 0.70727944, w: 0}
   m_LocalPosition: {x: -2.9901733, y: 11.570984, z: -16.830418}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3731513422360431086}
-  m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.028, y: 180, z: 0}
 --- !u!33 &1435818956770004267
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11410,6 +12278,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0044363937, y: 0.023156391, z: 0.045959502}
   m_Center: {x: 0.00063344714, y: -0.011578188, z: 0.022979751}
+--- !u!114 &41660503746817778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8320335938309040173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -90.028, y: 180, z: 90.007}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &8394634943912242099
 GameObject:
   m_ObjectHideFlags: 0
@@ -11527,7 +12415,9 @@ GameObject:
   - component: {fileID: 6935435285695437377}
   - component: {fileID: 431028837396943413}
   - component: {fileID: 4085013051522330879}
-  m_Layer: 0
+  - component: {fileID: 2865338836401956210}
+  - component: {fileID: 8813543738501702865}
+  m_Layer: 6
   m_Name: upper_cabinetdoor.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11599,6 +12489,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2865338836401956210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600912419511901343}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.007112335, y: 0.0010004495, z: 0.015587092}
+  m_Center: {x: 0.00360357, y: -0.00050022954, z: 0.0077935434}
+--- !u!114 &8813543738501702865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600912419511901343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: -98.685}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &8656944512601375670
 GameObject:
   m_ObjectHideFlags: 0
@@ -11891,7 +12822,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2253137413366195437, guid: d901f7122f13a1148b2d6c444caf3799, type: 3}
 --- !u!1 &9023280941677741853
@@ -11906,7 +12837,8 @@ GameObject:
   - component: {fileID: 987295640701043555}
   - component: {fileID: 3746133587751996845}
   - component: {fileID: 7106043892628842094}
-  m_Layer: 0
+  - component: {fileID: 3551154743812458484}
+  m_Layer: 6
   m_Name: cabinetdoor.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11999,6 +12931,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.007598359, y: 0.0010004495, z: 0.013643764}
   m_Center: {x: -0.0038465783, y: -0.00050025934, z: 0.0068218717}
+--- !u!114 &3551154743812458484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9023280941677741853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3038119ad9c05ab4e81e2a2d5fae8ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  openRotation: {x: -89.98, y: 0, z: 102.639}
+  promptText: {fileID: 0}
+  playerCamera: {fileID: 0}
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxPressDistance: 2
 --- !u!1 &9156298534889784329
 GameObject:
   m_ObjectHideFlags: 0
