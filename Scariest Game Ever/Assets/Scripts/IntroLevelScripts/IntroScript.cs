@@ -13,13 +13,13 @@ public class IntroScript : MonoBehaviour
     Transform teleportPlace;
     ColliderScript surrealRealm;
     public Transform teleportLocation;
-    public GameObject TriggerBoi1;
-    public GameObject TriggerBoi2;
-    public GameObject TriggerBoi3;
-    public GameObject TriggerBoi4;
-    public GameObject TriggerBoi5;
-    public GameObject TriggerBoi6;
-    public GameObject TriggerBoi7;
+    public GameObject KitchenTrigger1;
+    public GameObject StairsTrigger1;
+    public GameObject LivingRoomTrigger;
+    public GameObject BathroomTrigger;
+    public GameObject HallwayTrigger1;
+    public GameObject HallwayTrigger2;
+    public GameObject KitchenTrigger2;
     public GameObject InteractionCylinder1;
     public GameObject InteractionCylinder2;
     public GameObject InteractionCylinder3;
@@ -47,44 +47,44 @@ public class IntroScript : MonoBehaviour
             {
                 case 0:
                     AntiStairsColldier.SetActive(true);
-                    TriggerBoi1.SetActive(true);
-                    TriggerBoi2.SetActive(true);
+                    KitchenTrigger1.SetActive(true);
+                    StairsTrigger1.SetActive(true);
                     teleportPlace = InteractionCylinder1.transform;
                 break;
 
                 case 1:
-                    TriggerBoi1.SetActive(false);
-                    TriggerBoi3.SetActive(true);
-                    TriggerBoi4.SetActive(true);
+                    KitchenTrigger1.SetActive(false);
+                    LivingRoomTrigger.SetActive(true);
+                    BathroomTrigger.SetActive(true);
                     teleportPlace = InteractionCylinder2.transform;
                 break;
 
                 case 2:
-                    TriggerBoi6.SetActive(true);
-                    TriggerBoi4.SetActive(false);
+                    HallwayTrigger2.SetActive(true);
+                    BathroomTrigger.SetActive(false);
                     teleportPlace = InteractionCylinder3.transform;
                 break;
 
                 case 3:
-                    TriggerBoi2.SetActive(false);
+                    StairsTrigger1.SetActive(false);
                     teleportPlace = InteractionCylinder4.transform;
                 break;
 
                 case 4:
-                    TriggerBoi3.SetActive(false);
-                    TriggerBoi7.SetActive(true);
+                    LivingRoomTrigger.SetActive(false);
+                    KitchenTrigger2.SetActive(true);
                     AntiStairsColldier.SetActive(false);
                     teleportPlace = InteractionCylinder5.transform;
                 break;
 
                 case 5:
-                    TriggerBoi1.SetActive(false);
-                    TriggerBoi2.SetActive(false);
-                    TriggerBoi3.SetActive(false);
-                    TriggerBoi4.SetActive(false);
-                    TriggerBoi5.SetActive(false);
-                    TriggerBoi6.SetActive(false);
-                    TriggerBoi7.SetActive(false);
+                    KitchenTrigger1.SetActive(false);
+                    StairsTrigger1.SetActive(false);
+                    LivingRoomTrigger.SetActive(false);
+                    BathroomTrigger.SetActive(false);
+                    HallwayTrigger1.SetActive(false);
+                    HallwayTrigger2.SetActive(false);
+                    KitchenTrigger2.SetActive(false);
                     startTour = false;
                 break;
 
